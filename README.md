@@ -1,22 +1,27 @@
 # RB_VLSI_RISC-V-SOC_Tapeout
-##Tools Installation
-All the instructions for installation of required tools can be found here:
-#System Requirements
-6 GB RAM
-50 GB HDD
-Ubuntu 20.04 or higher
-4 vCPU
-#Resizing the Ubuntu window to fit the screen
-'''
+
+## Tools Installation
+
+#### <ins>All the instructions for installation of required tools can be found here:</ins>
+
+### **System Requirements**
+- 6 GB RAM
+- 50 GB HDD
+- Ubuntu 20.04 or higher
+- 4 vCPU
+
+### **Resizing the Ubuntu window to fit the screen**
+```bash
 $ sudo apt update
 $ sudo apt install build-essential dkms linux-headers-$(uname -r)
 $ cd /media/spatha/VBox_GAs_7.1.8/
 $ ./autorun.sh
-'''
+```
 
-##TOOL CHECK
-#Yosys
-'''
+### **TOOL CHECK**
+
+#### <ins>**Yosys**</ins>
+```bash
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys
@@ -30,16 +35,19 @@ $ make config-gcc
 $ git submodule update --init --recursive
 $ make 
 $ sudo make install
+```
+![Alt Text](Images/yosys_installation_done.jpeg)
 
-'''
-
-#Iverilog
-'''
+#### <ins>**Iverilog**</ins>
+```bash
 $ sudo apt-get update
 $ sudo apt-get install iverilog
-'''
-#gtkwave
-'''
+```
+![Alt Text](Images/iverilog_status.png)
+
+#### <ins>**gtkwave**</ins>
+```bash
 $ sudo apt-get update
 $ sudo apt install gtkwave
-'''
+```
+![Alt Text](Images/gtkwave_installation_done.jpeg)
